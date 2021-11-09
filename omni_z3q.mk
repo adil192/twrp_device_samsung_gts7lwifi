@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := z3q
+PRODUCT_RELEASE_NAME := gts7lwifi
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -23,25 +23,22 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Inherit Telephony packages
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Inherit language packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/z3q/device.mk)
+$(call inherit-product, device/samsung/gts7lwifi/device.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/z3q/recovery/root,recovery/root)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gts7lwifi/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_z3q
-PRODUCT_DEVICE := z3q
-PRODUCT_MODEL := SM-G988U
+PRODUCT_NAME := omni_gts7lwifi
+PRODUCT_DEVICE := gts7lwifi
+PRODUCT_MODEL := SM-T870
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung

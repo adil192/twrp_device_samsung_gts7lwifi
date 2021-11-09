@@ -55,9 +55,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 QCOM_BOARD_PLATFORMS += kona
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/z3q/prebuilt/Image.gz
-TARGET_PREBUILT_DTB := device/samsung/z3q/prebuilt/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/z3q/prebuilt/recoverydtbo
+TARGET_PREBUILT_KERNEL := device/samsung/gts7lwifi/prebuilt/Image.gz
+TARGET_PREBUILT_DTB := device/samsung/gts7lwifi/prebuilt/dtb
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/gts7lwifi/prebuilt/recoverydtbo
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
@@ -73,11 +73,11 @@ BOARD_RAMDISK_OFFSET := 0x02000000
 BOARD_KERNEL_SECOND_OFFSET := 0x00f00000
 BOARD_KERNEL_TAGS_OFFSET := 0x01e00000
 BOARD_DTB_OFFSET := 0x01f00000
-BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) 
+BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board "SRPSI24B001"
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB) --dtb_offset $(BOARD_DTB_OFFSET)
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/z3q/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/gts7lwifi/bootimg.mk
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -124,7 +124,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # TWRP specific build flags
 TW_DEVICE_VERSION := 3_afaneh92-R
-TW_THEME := portrait_hdpi
+TW_THEME := landscape_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
