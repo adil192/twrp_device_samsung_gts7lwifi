@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gts7lwifi/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_gts7lwifi
+PRODUCT_NAME := twrp_gts7lwifi
 PRODUCT_DEVICE := gts7lwifi
 PRODUCT_MODEL := SM-T870
 PRODUCT_BRAND := samsung
