@@ -55,9 +55,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 QCOM_BOARD_PLATFORMS += kona
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/gts7lwifi/prebuilt/Image.gz
-TARGET_PREBUILT_DTB := device/samsung/gts7lwifi/prebuilt/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/gts7lwifi/prebuilt/recoverydtbo
+TARGET_PREBUILT_KERNEL := device/samsung/gts7lwifi/prebuilt/Image
+TARGET_PREBUILT_DTB := device/samsung/gts7lwifi/prebuilt/dtb/dtb.dtb
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/gts7lwifi/prebuilt/recovery_dtbo
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
