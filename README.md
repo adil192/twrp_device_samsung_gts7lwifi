@@ -5,7 +5,7 @@
 ```sh
 export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
-lunch omni_gts7lwifi-eng
+lunch twrp_gts7lwifi-eng
 make recoveryimage
 ```
 
